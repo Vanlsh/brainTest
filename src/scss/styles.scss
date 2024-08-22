@@ -1,18 +1,18 @@
-@import './header.scss';
-@import './hero.scss';
-@import './warning.scss';
-@import './about.scss';
-@import './description.scss';
-@import './faq.scss';
-@import './reviews.scss';
-@import './gallery.scss';
-@import './benefits.scss';
-@import './footer.scss';
+@import './components/header.scss';
+@import './components/hero.scss';
+@import './components/warning.scss';
+@import './components/about.scss';
+@import './components/description.scss';
+@import './components/faq.scss';
+@import './components/reviews.scss';
+@import './components/gallery.scss';
+@import './components/benefits.scss';
+@import './components/footer.scss';
 
 :root {
+  @include font(20, 24);
+
   font-family: Patrick Hand, Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 20px;
-  line-height: 24px;
   font-weight: 400;
 
   color: #111111;
@@ -23,4 +23,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  @include media(desktop) {
+    width: 1440px;
+    padding: 0 72px;
+  }
 }
