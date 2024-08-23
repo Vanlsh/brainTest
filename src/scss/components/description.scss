@@ -1,1 +1,140 @@
+.description {
+  padding: 24px 0;
+  background-color: $_secondary_bg_color;
+}
 
+.description__title {
+  margin: 0 auto;
+  padding-top: 18px;
+  width: 246px;
+  height: 57px;
+  margin-bottom: 24px;
+  background-image: url('../img/description/htp-title.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1;
+  color: $_accent_color;
+}
+.description__list {
+}
+.description__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.description__list .description__item:last-child {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 1439.99px) {
+  .description__container {
+    background-image: url('../img/description/htp-gim.png'),
+      url('../img/description/htp-scissors.png'),
+      url('../img/description/htp-slide.png'),
+      url('../img/description/htp-moskit.png');
+    background-position: top 120px left 0px, top 376px right 14px,
+      top 476px left 21px, bottom 44px left 19px;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 130px, 32px, 100px, 34px;
+  }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .description__container {
+      background-image: url('../img/description/htp-gim@2x.png'),
+        url('../img/description/htp-scissors@2x.png'),
+        url('../img/description/htp-slide@2x.png'),
+        url('../img/description/htp-moskit@2x.png');
+    }
+  }
+  .description__item:nth-child(1),
+  .description__item:nth-child(2),
+  .description__item:nth-child(5),
+  .description__item:nth-child(8) {
+    margin-left: 76px;
+  }
+  .description__item:nth-child(4) {
+    margin-right: 52px;
+  }
+  .description__item:nth-child(7) {
+    margin-left: 28px;
+  }
+}
+.description__text {
+  font-size: 20px;
+}
+.description__number {
+  font-weight: 400;
+  font-size: 44px;
+  color: $_light_color;
+  margin-right: 12px;
+}
+@include media(desktop) {
+  .description {
+    padding: 60px 0;
+  }
+  .description__container {
+    background-image: url('../img/description/htp-gim-desktop.png'),
+      url('../img/description/htp-scissors-desktop.png'),
+      url('../img/description/htp-slide-desktop.png'),
+      url('../img/description/htp-moskit-desktop.png');
+    background-position: top 266px left 88px, top 215px left 313px,
+      top 694px left 55px, top 552px left 506px;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 457px, 70px, 199px, 70px;
+  }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .description__container {
+      background-image: url('../img/description/htp-gim-desktop@2x.png'),
+        url('../img/description/htp-scissors-desktop@2x.png'),
+        url('../img/description/htp-slide-desktop@2x.png'),
+        url('../img/description/htp-moskit-desktop@2x.png');
+    }
+  }
+  .description__title {
+    margin: 0 auto;
+    padding-top: 42px;
+    width: 436px;
+    height: 123px;
+    margin-bottom: 48px;
+    background-image: url('../img/description/htp-title.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    font-size: 48px;
+  }
+
+  .description__list {
+  }
+  .description__item {
+    margin-bottom: 40px;
+  }
+  .description__list .description__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .description__item:nth-child(1),
+  .description__item:nth-child(8) {
+    margin-left: 18px;
+  }
+  .description__item:nth-child(2),
+  .description__item:nth-child(6) {
+    margin-left: 348px;
+  }
+  .description__item:nth-child(3),
+  .description__item:nth-child(5) {
+    margin-left: 568px;
+  }
+  .description__item:nth-child(4) {
+    margin-left: 788px;
+  }
+  .description__item:nth-child(7) {
+    margin-left: 128px;
+  }
+  .description__text {
+    font-size: 28px;
+  }
+  .description__number {
+  }
+}
