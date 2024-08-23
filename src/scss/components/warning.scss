@@ -1,2 +1,31 @@
-.about {
+.warning {
+  padding: 16px 0;
+  background-color: $_light_color;
+  border-bottom: 2px solid $_dark_color;
+  border-top: 2px solid $_dark_color;
+}
+
+.warning-container {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.warning-icon {
+  flex-shrink: 0;
+}
+.warning-text {
+  font-size: 20px;
+}
+@include media(desktop) {
+  .warning-text {
+    font-size: 32px;
+  }
+  .warning-container {
+    gap: 36px;
+  }
+  .warning-icon {
+    width: 48px;
+    height: 48px;
+  }
 }
