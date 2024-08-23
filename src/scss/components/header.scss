@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
 
-  background-color: #fcb91f;
+  // background-color: #fcb91f;
   padding: 24px 0;
 }
 
@@ -12,6 +12,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   @include media(desktop) {
     align-items: flex-start;
   }
