@@ -1,5 +1,5 @@
 .hero {
-  background-color: #fcb91f;
+  background-color: $_main_bg_color;
 
   .hero-container {
     padding-top: 96px;
@@ -22,7 +22,7 @@
 
       background-image: url('../../img/hero/phone-desktop@1x.png');
       background-repeat: no-repeat;
-      background-position: bottom 1.12px right 34px;
+      background-position: bottom 37.12px right 34px;
       background-size: 986.71px 768.03px;
 
       @media (min-device-pixel-ratio: 2),
@@ -39,14 +39,13 @@
   line-height: 1.09;
 
   text-align: center;
-  display: flex;
-  flex-direction: column;
 
+  font-weight: 400;
   margin-bottom: 32px;
 
   span {
     font-family: Luckiest Guy;
-    color: #ffffff;
+    color: $_light_color;
   }
 
   @include media(desktop) {
@@ -55,6 +54,9 @@
     line-height: 1.02;
     text-align: start;
     margin-bottom: 48px;
+    span {
+      line-height: 1;
+    }
   }
 }
 
