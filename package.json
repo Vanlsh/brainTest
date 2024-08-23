@@ -22,6 +22,7 @@
   "author": "Ivan Yarovyi <yarovyiivan16@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "swiper": "^11.1.10",
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"
   }

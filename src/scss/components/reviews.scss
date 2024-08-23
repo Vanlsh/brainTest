@@ -1,1 +1,48 @@
-.reviews {}
+.reviews {
+  padding: 24px 0;
+}
+.title {
+  font-weight: 400;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.reviews-item {
+  border: 1px solid #111;
+  border-radius: 16px;
+  padding: 8px;
+  width: 290px;
+  height: 204px;
+}
+.reviews-quote {
+  padding: 10px;
+  display: flex;
+  margin-bottom: 8px;
+}
+.reviews-quote-img {
+  padding: 10px;
+  flex-shrink: 0;
+}
+.reviews-quote-text {
+  padding: 10px;
+}
+.reviews-author {
+  height: 60px;
+  display: flex;
+  gap: 16px;
+}
+.reviews-avatar {
+  border-radius: 50%;
+}
+.reviews-text {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 1440px) {
+  .reviews {
+    padding: 48px 0;
+  }
+  .title {
+    font-size: 48px;
+  }
+}
