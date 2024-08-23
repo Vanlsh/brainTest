@@ -1,0 +1,75 @@
+.policy-container {
+  &.container {
+    padding-top: 96px;
+    padding-bottom: 80px;
+  }
+  @include media(desktop) {
+    &.container {
+      padding-top: 166px;
+    }
+  }
+}
+
+.policy-title {
+  margin-bottom: 20px;
+
+  color: $_accent_color;
+  font-size: 28px;
+
+  @include media(desktop) {
+    margin-bottom: 42px;
+    font-size: 48px;
+  }
+}
+
+.policy-main-title {
+  margin-bottom: 24px;
+  font-size: 40px;
+
+  @include media(desktop) {
+    font-size: 60px;
+  }
+}
+
+.policy-head-text {
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    margin-bottom: 48px;
+    font-size: 40px;
+  }
+}
+
+.policy-text {
+  @include media(desktop) {
+    font-size: 40px;
+  }
+}
+
+.policy-section:not(:last-child) {
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    margin-bottom: 48px;
+  }
+}
+
+.policy-list {
+  margin-top: 16px;
+}
+
+.policy-item {
+  span {
+    color: $_accent_color;
+  }
+  @include media(desktop) {
+    font-size: 40px;
+  }
+}
+
+.policy-item:not(:last-child) {
+  margin-bottom: 16px;
+  @include media(desktop) {
+    margin-bottom: 24px;
+  }
+}

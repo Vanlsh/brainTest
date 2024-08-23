@@ -64,8 +64,10 @@
   transition: color 0.3s ease;
 
   &:focus,
-  &:active {
+  &:active,
+  &:focus-visible {
     color: $_light_color;
+    outline: none;
   }
   @media (hover: hover) {
     &:hover {

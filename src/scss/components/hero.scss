@@ -6,6 +6,9 @@
     padding-bottom: 550px;
 
     background-image: url('../img/hero/phone-mob@1x.png');
+    @supports (background-image: url('../img/hero/phone-mob@1x.webp')) {
+      background-image: url('../img/hero/phone-mob@1x.webp');
+    }
     background-repeat: no-repeat;
     background-position: bottom 53px left 50%;
     background-size: 236px 465px;
@@ -14,6 +17,9 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url('../img/hero/phone-mob@2x.png');
+      @supports (background-image: url('../img/hero/phone-mob@2x.webp')) {
+        background-image: url('../img/hero/phone-mob@2x.webp');
+      }
     }
 
     @include media(desktop) {
@@ -21,6 +27,9 @@
       padding-bottom: 78px;
 
       background-image: url('../img/hero/phone-desktop@1x.png');
+      @supports (background-image: url('../img/hero/phone-desktop@1x.webp')) {
+        background-image: url('../img/hero/phone-desktop@1x.webp');
+      }
       background-repeat: no-repeat;
       background-position: bottom 37.12px right 34px;
       background-size: 986.71px 768.03px;
@@ -29,6 +38,11 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         background-image: url('../img/hero/phone-desktoop@2x.png');
+        @supports (
+          background-image: url('../img/hero/phone-desktoop@2x.webp')
+        ) {
+          background-image: url('../img/hero/phone-desktoop@2x.webp');
+        }
       }
     }
   }
