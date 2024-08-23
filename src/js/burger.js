@@ -19,7 +19,6 @@ const handleLink = e => {
     closeBurger();
     const location = window.location.pathname;
     if (MAIN_PAGE !== location) {
-      console.log(location);
       e.preventDefault();
       window.location.href = MAIN_PAGE + target.getAttribute('href');
     }
