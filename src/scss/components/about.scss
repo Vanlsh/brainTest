@@ -29,6 +29,9 @@
 .about__text-accent {
   color: $_accent_color;
 }
+.about__image {
+  margin: 0 auto;
+}
 
 @include media(desktop) {
   .about {
