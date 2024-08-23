@@ -8,6 +8,7 @@
 @import './components/gallery.scss';
 @import './components/benefits.scss';
 @import './components/footer.scss';
+@import './components/burger.scss';
 
 :root {
   @include font(20, 24);
@@ -34,4 +35,8 @@
     width: 1440px;
     padding: 0 72px;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
