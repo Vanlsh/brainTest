@@ -23,7 +23,7 @@
     <script type="module" crossorigin src="/brainTest/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/brainTest/assets/vendor-6ee8883f.js">
     <link rel="stylesheet" href="/brainTest/assets/vendor-7c8ef494.css">
-    <link rel="stylesheet" href="/brainTest/assets/styles-591c5856.css">
+    <link rel="stylesheet" href="/brainTest/assets/styles-3e0604fb.css">
   </head>
   <body>
     <header class="header">
@@ -58,7 +58,7 @@
       </ul>
     </nav>
     <button
-      class="header-burger-button"
+      class="header-burger-button js-open-burger-button"
       type="button"
       aria-label="Open burger menu"
     >
@@ -293,6 +293,45 @@
 
     </main>
     <footer></footer>
+
+    <div class="burger js-burger">
+  <div class="burger-wrapper">
+    <button
+      class="burger-close-button js-close-burger-button"
+      type="button"
+      aria-label="Close burger menu"
+    >
+      <svg class="burger-close-icon" width="36" height="36">
+        <use href="/brainTest/assets/sprite-ba7ec740.svg#icon-close"></use>
+      </svg>
+    </button>
+    <nav class="burger-nav">
+      <ul class="burger-nav-list js-burger-nav-list">
+        <li class="burger-nav-item">
+          <a href="#" class="burger-nav-link">Home</a>
+        </li>
+        <li class="burger-nav-item">
+          <a href="#about" class="burger-nav-link">About the Game</a>
+        </li>
+        <li class="burger-nav-item">
+          <a href="#description" class="burger-nav-link">How to Play</a>
+        </li>
+        <li class="burger-nav-item">
+          <a href="#faq" class="burger-nav-link">FAQ</a>
+        </li>
+        <li class="burger-nav-item">
+          <a href="#reviews" class="burger-nav-link">Reviews</a>
+        </li>
+        <li class="burger-nav-item">
+          <a href="#gallery" class="burger-nav-link">Gallery</a>
+        </li>
+        <li class="burger-nav-item">
+          <a href="#benefits" class="burger-nav-link">Benefits</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
 
     
   </body>
