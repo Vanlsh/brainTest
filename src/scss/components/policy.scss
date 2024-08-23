@@ -1,16 +1,17 @@
-.policy-container {
+.secondary-page-container {
   &.container {
     padding-top: 96px;
-    padding-bottom: 80px;
+    padding-bottom: 32px;
   }
   @include media(desktop) {
     &.container {
       padding-top: 166px;
+      padding-bottom: 80px;
     }
   }
 }
 
-.policy-title {
+.secondary-page-title {
   margin-bottom: 20px;
 
   color: $_accent_color;
@@ -22,7 +23,7 @@
   }
 }
 
-.policy-main-title {
+.secondary-page-main-title {
   margin-bottom: 24px;
   font-size: 40px;
 
@@ -31,7 +32,7 @@
   }
 }
 
-.policy-head-text {
+.secondary-page-head-text {
   margin-bottom: 24px;
 
   @include media(desktop) {
@@ -40,13 +41,13 @@
   }
 }
 
-.policy-text {
+.secondary-page-text {
   @include media(desktop) {
     font-size: 40px;
   }
 }
 
-.policy-section:not(:last-child) {
+.secondary-page-section:not(:last-child) {
   margin-bottom: 24px;
 
   @include media(desktop) {
@@ -54,11 +55,11 @@
   }
 }
 
-.policy-list {
+.secondary-page-list {
   margin-top: 16px;
 }
 
-.policy-item {
+.secondary-page-item {
   span {
     color: $_accent_color;
   }
@@ -67,7 +68,7 @@
   }
 }
 
-.policy-item:not(:last-child) {
+.secondary-page-item:not(:last-child) {
   margin-bottom: 16px;
   @include media(desktop) {
     margin-bottom: 24px;
