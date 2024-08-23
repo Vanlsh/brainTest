@@ -112,7 +112,7 @@
   transform: translateY(-50%) rotate(0);
 }
 
-@media screen and (min-width: 1440px) {
+@include media(desktop) {
   .faq {
     padding: 60px 0;
   }
