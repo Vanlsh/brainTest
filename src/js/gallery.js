@@ -23,9 +23,3 @@ const gallerySliderProps = {
 
 const gallerySlider = new Swiper(gallerySliderElement, gallerySliderProps);
 gallerySlider.pagination.init();
-
-const prevElButton = document.querySelector('.gallery-btn-next');
-const nextElButton = document.querySelector('.gallery-btn-prew');
-
-console.log(prevElButton);
-console.log(nextElButton);
