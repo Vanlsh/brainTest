@@ -4,6 +4,7 @@ import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import { globalStylesOptions } from './global.styles';
+import criticalCSS from './src/plugins/vite-plugin-critical.js';
 
 export default defineConfig(({ command }) => {
   return {
@@ -28,6 +29,7 @@ export default defineConfig(({ command }) => {
       outDir: '../dist',
     },
     plugins: [
+      criticalCSS(),
       injectHTML(),
       FullReload(['./src/**/**.html']),
       ViteImageOptimizer({
