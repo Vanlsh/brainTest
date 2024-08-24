@@ -2,25 +2,22 @@
   padding: 24px 0;
   background-color: $_main_bg_color;
 }
-.about__title-wrapper {
+.about__title {
   margin: 0 auto;
+  margin-bottom: 24px;
   padding-top: 42px;
   width: 217px;
   height: 130px;
-  text-align: center;
   background-image: url('../img/about/about-title.svg');
   background-repeat: no-repeat;
   background-position: center;
+  text-align: center;
+  font-weight: 400;
+  font-size: 28px;
 }
 .about__icon {
   stroke-width: 2px;
   stroke: #111;
-}
-.about__title {
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 1;
-  text-align: center;
 }
 .about__text {
   font-size: 20px;
@@ -37,14 +34,13 @@
   .about {
     padding: 60px 0;
   }
-  .about__title-wrapper {
+  .about__title {
+    margin: 0 auto;
+    margin-bottom: 24px;
     padding-top: 80px;
     width: 328px;
     height: 225px;
-    background-size: contain;
-    margin-bottom: 24px;
-  }
-  .about__title {
+    margin-bottom: 48px;
     font-size: 48px;
   }
   .about__text {
