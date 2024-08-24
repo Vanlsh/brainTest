@@ -28,6 +28,16 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+.page-secondary {
+  background-color: $_main_bg_color;
+  min-height: 100vh;
+}
+
+/* reusable styles */
 
 .container {
   width: 320px;
@@ -39,14 +49,27 @@
     padding: 0 72px;
   }
 }
-
-html {
-  scroll-behavior: smooth;
+.section {
+  padding: 24px 0;
 }
-
-.page-secondary {
-  background-color: $_main_bg_color;
-  min-height: 100vh;
+.section__title {
+  margin: 0 auto;
+  margin-bottom: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+}
+@include media(desktop) {
+  .section {
+    padding: 60px 0;
+  }
+  .section__title {
+    margin-bottom: 48px;
+    font-size: 48px;
+  }
 }
 
 .visually-hidden {

@@ -1,19 +1,11 @@
 .about {
-  padding: 24px 0;
   background-color: $_main_bg_color;
 }
 .about__title {
-  margin: 0 auto;
-  margin-bottom: 24px;
   padding-top: 42px;
   width: 217px;
   height: 130px;
   background-image: url('../img/about/about-title.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  text-align: center;
-  font-weight: 400;
-  font-size: 28px;
 }
 .about__icon {
   stroke-width: 2px;
@@ -31,18 +23,10 @@
 }
 
 @include media(desktop) {
-  .about {
-    padding: 60px 0;
-  }
   .about__title {
-    margin: 0 auto;
-    margin-bottom: 24px;
     padding-top: 80px;
     width: 328px;
     height: 225px;
-    background-size: 328px 225px;
-    margin-bottom: 48px;
-    font-size: 48px;
   }
   .about__text {
     font-size: 28px;
