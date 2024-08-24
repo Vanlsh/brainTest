@@ -13,8 +13,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   margin: 0 auto;
+
+  font-size: 28px;
+  color: $_accent_color;
 
   background-image: url('../img/gallery/gallery-title-mob@1x.png');
   @supports (
@@ -44,6 +46,8 @@
     width: 348px;
     height: 175px;
     margin-bottom: 24px;
+
+    font-size: 48px;
 
     background-size: 338px 92px;
     background-image: url('../img/gallery/gallery-title-desk@1x.png');
@@ -137,6 +141,19 @@
 
   padding: 0;
   margin: 0;
+
+  .swiper-btn-icon {
+    transition: fill 0.3s ease;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus .swiper-btn-icon,
+  &:hover .swiper-btn-icon {
+    fill: $_light_color;
+  }
 }
 
 .gallery-btn-next {
@@ -158,7 +175,4 @@
   .swiper-pagination-bullet-active {
     transform: scale(2);
   }
-}
-
-.swiper-button-next {
 }
