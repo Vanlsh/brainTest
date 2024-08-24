@@ -29,7 +29,19 @@
   height: 101px;
   text-align: center;
   background-color: $_dark_color;
+  transition: box-shadow 0.25s ease-out;
 }
+.benefits__item:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.benefits__icon {
+  transition: transform 0.25s ease-out;
+}
+.benefits__item:hover .benefits__icon {
+  transform: translateY(-5px);
+}
+
 @media screen and (max-width: 1439.99px) {
   .benefits__item:nth-child(1) {
     width: 56px;
