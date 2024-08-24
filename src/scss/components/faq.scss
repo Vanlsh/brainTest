@@ -1,6 +1,3 @@
-.faq {
-  padding: 24px 0;
-}
 .faq-title {
   font-weight: 400;
   font-size: 28px;
@@ -113,10 +110,6 @@
 }
 
 @include media(desktop) {
-  .faq {
-    padding: 60px 0;
-  }
-
   .faq-title {
     font-size: 48px;
     margin-bottom: 48px;

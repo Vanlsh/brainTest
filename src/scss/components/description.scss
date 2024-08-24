@@ -1,24 +1,13 @@
 .description {
-  padding: 24px 0;
   background-color: $_secondary_bg_color;
 }
 
 .description__title {
-  margin: 0 auto;
   padding-top: 18px;
   width: 246px;
   height: 57px;
-  margin-bottom: 24px;
   background-image: url('../img/description/htp-title.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  text-align: center;
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 1;
   color: $_accent_color;
-}
-.description__list {
 }
 .description__item {
   display: flex;
@@ -28,6 +17,9 @@
 }
 .description__list .description__item:last-child {
   margin-bottom: 0;
+}
+.description__number {
+  font-family: 'Luckiest Guy', cursive;
 }
 @media screen and (max-width: 1439.99px) {
   .description__container {
@@ -71,9 +63,6 @@
   margin-right: 12px;
 }
 @include media(desktop) {
-  .description {
-    padding: 60px 0;
-  }
   .description__container {
     background-image: url('../img/description/htp-gim-desktop.png'),
       url('../img/description/htp-scissors-desktop.png'),
@@ -93,16 +82,10 @@
     }
   }
   .description__title {
-    margin: 0 auto;
     padding-top: 42px;
     width: 436px;
     height: 123px;
-    margin-bottom: 48px;
     background-image: url('../img/description/htp-title.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    font-size: 48px;
   }
 
   .description__list {
@@ -134,7 +117,5 @@
   }
   .description__text {
     font-size: 28px;
-  }
-  .description__number {
   }
 }

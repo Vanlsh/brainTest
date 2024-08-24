@@ -1,22 +1,12 @@
 .benefits {
-  padding: 24px 0;
   background-color: $_main_bg_color;
 }
 
 .benefits__title {
-  margin: 0 auto;
   padding-top: 30px;
   width: 225px;
   height: 88px;
-  margin-bottom: 24px;
   background-image: url('../img/benefits/benefits-title.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 225px 88px;
-  text-align: center;
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 1;
 }
 .benefits__list {
   display: flex;
@@ -59,17 +49,13 @@
 }
 
 @include media(desktop) {
-  .benefits {
-    padding: 60px 0;
-  }
   .benefits__title {
     padding-top: 48px;
     width: 330px;
     height: 145px;
-    /*   margin-bottom: 48px; */
+  }
+  .benefits__title.section__title {
     margin-bottom: 93px;
-    background-size: 330px 145px;
-    font-size: 48px;
   }
   .benefits__list {
     gap: 48px;
