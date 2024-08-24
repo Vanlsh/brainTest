@@ -39,7 +39,7 @@
   box-sizing: border-box;
   background-color: #fff;
   transform: scale(0.8);
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: transform 1.5s ease;
 }
 .reviews-quote {
   display: flex;
@@ -67,8 +67,14 @@
   font-size: 16px;
 }
 
-.swiper-slide-active {
-  transform: scale(1);
+.reviews-swiper {
+  .swiper-slide-active {
+    transform: scale(1);
+  }
+  .swiper-slide-prev,
+  .swiper-slide-next {
+    transform: scale(0.9);
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -90,6 +96,7 @@
   .reviews-swiper {
     width: 1296px;
     height: 258px;
+    overflow-y: visible !important;
   }
   .reviews-swiper-slide {
     gap: 8px;
