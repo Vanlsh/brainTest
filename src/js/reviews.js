@@ -3,7 +3,7 @@ import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 
 Swiper.use([Autoplay]);
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.js-reviews-swiper', {
   // Optional parameters
   loop: true,
   slidesPerView: 1,

@@ -23,12 +23,12 @@
   fill: #fee469;
   stroke: #111;
 }
-.swiper {
+.reviews-swiper {
   width: 288px;
   height: 204px;
 }
 
-.swiper-slide {
+.reviews-swiper-slide {
   padding: 8px;
   display: flex !important;
   flex-direction: column;
@@ -87,11 +87,11 @@
     width: 344px;
     height: 84px;
   }
-  .swiper {
+  .reviews-swiper {
     width: 1296px;
     height: 258px;
   }
-  .swiper-slide {
+  .reviews-swiper-slide {
     gap: 8px;
     padding: 16px;
     padding-top: 32px;
