@@ -2,7 +2,6 @@
   background-color: $_main_bg_color;
 }
 .about__title {
-  padding-top: 42px;
   width: 217px;
   height: 130px;
   background-image: url('../img/about/about-title.svg');
@@ -24,7 +23,6 @@
 
 @include media(desktop) {
   .about__title {
-    padding-top: 80px;
     width: 328px;
     height: 225px;
   }
