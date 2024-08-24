@@ -3,7 +3,6 @@
 }
 
 .description__title {
-  padding-top: 18px;
   width: 246px;
   height: 57px;
   background-image: url('../img/description/htp-title.svg');
@@ -19,7 +18,10 @@
   margin-bottom: 0;
 }
 .description__number {
+  margin-right: 12px;
   font-family: 'Luckiest Guy', cursive;
+  font-size: 36px;
+  color: $_light_color;
 }
 @media screen and (max-width: 1439.99px) {
   .description__container {
@@ -56,12 +58,7 @@
 .description__text {
   font-size: 20px;
 }
-.description__number {
-  font-weight: 400;
-  font-size: 44px;
-  color: $_light_color;
-  margin-right: 12px;
-}
+
 @include media(desktop) {
   .description__container {
     background-image: url('../img/description/htp-gim-desktop.png'),
@@ -82,13 +79,9 @@
     }
   }
   .description__title {
-    padding-top: 42px;
     width: 436px;
     height: 123px;
     background-image: url('../img/description/htp-title.svg');
-  }
-
-  .description__list {
   }
   .description__item {
     margin-bottom: 40px;
@@ -117,5 +110,8 @@
   }
   .description__text {
     font-size: 28px;
+  }
+  .description__number {
+    font-size: 44px;
   }
 }
