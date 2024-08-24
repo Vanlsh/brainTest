@@ -72,7 +72,7 @@
 
 .swiper.gallery-swiper {
   .gallery-swiper-wrapper {
-    height: 170px;
+    height: 180px;
 
     .gallery-slider {
       height: 100%;
@@ -101,12 +101,27 @@
     }
   }
 
+  @media screen and (min-width: 1439.8px) {
+    .swiper.gallery-swiper {
+      padding: 5px;
+      margin: -5px;
+    }
+  }
+
   .gallery-slider {
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.01);
+    }
     @include media(desktop) {
       flex-shrink: 1;
       width: fit-content !important;
       margin-right: 0 !important;
     }
+  }
+
+  @include media(desktop) {
+    overflow: visible !important;
   }
 }
 
