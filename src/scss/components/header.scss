@@ -1,9 +1,20 @@
 .header {
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   padding: 24px 0;
+
+  z-index: 100;
+
+  transition: padding 0.3s ease;
+
+  &.header--small {
+    padding: 5px 0;
+    background-color: rgba(252, 185, 31, 0.7);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .header-container {
@@ -18,7 +29,7 @@
 
 .header-logo {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 8px;
 
   .header-icon {
@@ -38,6 +49,7 @@
     .header-icon {
       width: 58px;
       height: 58px;
+      line-height: 1.17;
     }
   }
 }
@@ -52,11 +64,13 @@
 
 .header-nav-list {
   display: flex;
+  align-items: center;
   gap: 42px;
 }
 
 .header-nav-link {
-  display: block;
+  display: flex;
+  align-items: center;
   height: 58px;
   font-size: 32px;
 
