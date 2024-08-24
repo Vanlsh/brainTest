@@ -17,15 +17,6 @@ const handleLink = e => {
   const target = e.target;
   if (target.tagName === 'A') {
     closeBurger();
-    console.log(window.location.pathname);
-    console.log('MAIN_PAGE', MAIN_PAGE);
-    const location = window.location.pathname;
-    window.localStorage.setItem('test', location);
-    if (MAIN_PAGE !== location) {
-      console.log(MAIN_PAGE !== location);
-      e.preventDefault();
-      window.location.href = MAIN_PAGE + target.getAttribute('href');
-    }
   }
 };
 
