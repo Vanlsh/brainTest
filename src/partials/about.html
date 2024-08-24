@@ -1,1 +1,41 @@
-<section id="about"></section>
+<section id="about" class="about">
+  <div class="about__container container">
+    <h2 class="about__title">About the Game</h2>
+    <p class="about__text">
+      <span class="about__text-accent">"Brain Test Premium"</span> is an
+      enhanced version of the popular "Brain Test: Tricky Puzzles" game. It
+      offers a variety of challenging riddles and brain teasers designed to test
+      logic and creativity without the distraction of ads. The game features
+      intuitive mechanics wrapped in a visually engaging interface, where each
+      level presents unique problems that can often have unexpected solutions,
+      promoting outside-the-box thinking.
+    </p>
+  </div>
+  <picture>
+    <source
+      media="(min-width: 1440px)"
+      srcset="
+        ./img/about/about-desktop.webp    1x,
+        ./img/about/about-desktop@2x.webp 2x
+      "
+      type="image/webp"
+      width="1282"
+      height="580"
+    />
+    <source
+      srcset="./img/about/about.webp 1x, ./img/about/about@2x.webp 2x"
+      type="image/webp"
+      width="320"
+      height="155"
+    />
+    <img
+      class="about__image"
+      src="./img/about/about.png"
+      srcset="./img/about/about.png 1x, ./img/about/about@2x.png 2x"
+      alt="screenshots of the game"
+      width="320"
+      height="155"
+      loading="lazy"
+    />
+  </picture>
+</section>

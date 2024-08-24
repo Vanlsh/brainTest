@@ -11,6 +11,7 @@
     "deploy": "netlify deploy -p"
   },
   "devDependencies": {
+    "critical": "^7.2.0",
     "glob": "^8.1.0",
     "netlify-cli": "^17.30.0",
     "sass": "^1.77.6",
@@ -22,6 +23,7 @@
   "author": "Ivan Yarovyi <yarovyiivan16@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "modern-normalize": "^3.0.0",
     "swiper": "^11.1.10",
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"
