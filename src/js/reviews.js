@@ -1,23 +1,9 @@
-import Swiper from 'swiper';
-import { Autoplay } from 'swiper/modules';
-import 'swiper/css';
+document.addEventListener('DOMContentLoaded', async () => {
+  const { createReviewsSwiper } = await import('./swiper-config');
 
-Swiper.use([Autoplay]);
-const swiper = new Swiper('.js-reviews-swiper', {
-  // Optional parameters
-  loop: true,
-  slidesPerView: 1,
-  spaceBetween: 24,
-  breakpoints: {
-    1440: {
-      slidesPerView: 4,
-    },
-  },
-  centeredSlides: true,
-  centeredSlidesBounds: true,
-  speed: 1500,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
+  const reviewsSwiperElement = document.querySelector('.js-reviews-swiper');
+
+  if (reviewsSwiperElement) {
+    createReviewsSwiper(reviewsSwiperElement);
+  }
 });
