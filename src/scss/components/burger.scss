@@ -36,6 +36,7 @@
 
   transition: transform 0.25s ease;
 
+  overflow-y: auto;
   .burger.is-open & {
     transition: transform 0.25s ease 0.05s;
     transform: translateX(0);
@@ -71,14 +72,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  overflow-y: auto;
 }
 
 .burger-nav-list {
   min-height: 386px;
   width: 158px;
-  overflow-y: auto;
 }
 
 .burger-nav-link {
