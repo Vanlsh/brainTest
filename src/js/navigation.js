@@ -31,7 +31,8 @@ const navigateToPage = e => {
     if (isMainPage) {
       scrollToSection(targetId);
     } else {
-      window.location.href = `/brainTest/${targetId}`;
+      sessionStorage.setItem('scrollToId', targetId);
+      window.location.href = `/brainTest/`;
     }
   }
 };
@@ -39,6 +40,9 @@ const navigateToPage = e => {
 headerNavList.addEventListener('click', navigateToPage);
 burgerNavList.addEventListener('click', navigateToPage);
 
-if (isMainPage && window.location.hash) {
-  scrollToSection(window.location.hash);
+const scrollToId = sessionStorage.getItem('scrollToId');
+
+if (isMainPage && scrollToId) {
+  scrollToSection(scrollToId);
+  sessionStorage.removeItem('scrollToId');
 }
