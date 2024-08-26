@@ -21,7 +21,9 @@ window.addEventListener('scroll', function () {
   robot.style.transform = `translateX(${-scrollPosition * 0.3}px)`;
   a.style.transform = `translateX(${-scrollPosition * 0.3}px)`;
   xo.style.transform = `translateX(${scrollPosition * 0.2}px)`;
-  arrowRed.style.transform = `translateX(${scrollPosition * 0.2}px)`;
+  arrowRed.style.transform = `translateX(${scrollPosition * 0.2}px) rotate(${
+    scrollPosition * 0.1
+  }deg)`;
   phone.style.transform = `translateY(${scrollPosition * 0.2}px)`;
   atom.style.transform = `translate(${scrollPosition * 0.1}px, ${
     scrollPosition * 0.05
