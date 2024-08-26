@@ -1,4 +1,6 @@
 .warning {
+  position: relative;
+  z-index: 12;
   padding: 16px 0;
   background-color: $_light_color;
   border-bottom: 2px solid $_dark_color;

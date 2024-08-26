@@ -2,6 +2,7 @@
 @import 'modern-normalize.scss';
 @import './components/header.scss';
 @import './components/hero.scss';
+@import './components/hero-paralax.scss';
 @import './components/warning.scss';
 @import './components/about.scss';
 @import './components/description.scss';
@@ -17,7 +18,9 @@
   @include font(20, 24);
 
   font-family: Patrick Hand, Inter, Avenir, Helvetica, Arial, sans-serif;
+
   font-weight: 400;
+  line-height: 1.35;
 
   color: #111111;
   background-color: #ffffff;
