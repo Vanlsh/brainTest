@@ -24,7 +24,7 @@
   font-weight: 400;
   margin-bottom: 32px;
 
-  span {
+  .game-name {
     font-family: Luckiest Guy;
     color: $_light_color;
   }
@@ -184,5 +184,37 @@
     text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc,
       0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc,
       0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.hero-cat {
+  transform-origin: top center; /* Fixed at the top center */
+  animation: swing 2s ease-in-out infinite;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+.arrow-black {
+  animation: back-forward 1s ease-in-out infinite;
+}
+
+@keyframes back-forward {
+  0% {
+    transform: translateX(50px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50px);
   }
 }
