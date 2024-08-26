@@ -12,10 +12,11 @@
 
   opacity: 0;
   pointer-events: none;
-
+  transition: opacity 0.05s ease 0.25s;
   &.is-open {
     opacity: 1;
     pointer-events: auto;
+    transition: opacity 0.05s ease;
   }
 
   @include media(desktop) {
@@ -33,9 +34,11 @@
   background-color: $_main_bg_color;
   transform: translateX(100%);
 
-  transition: transform 0.3s ease;
+  transition: transform 0.25s ease;
 
+  overflow-y: auto;
   .burger.is-open & {
+    transition: transform 0.25s ease 0.05s;
     transform: translateX(0);
   }
 }
@@ -69,14 +72,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  overflow-y: auto;
 }
 
 .burger-nav-list {
   min-height: 386px;
   width: 158px;
-  overflow-y: auto;
 }
 
 .burger-nav-link {
