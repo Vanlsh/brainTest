@@ -60,6 +60,15 @@ async function initializeSwipers() {
     console.error('Error loading Swiper:', error);
   }
 }
-document.addEventListener('DOMContentLoaded', () => {
+/* document.addEventListener('DOMContentLoaded', () => {
   initializeSwipers();
-});
+}); */
+function handleScroll() {
+  if (window.scrollY >= 500) {
+    // Adjust the scroll threshold as needed
+    window.removeEventListener('scroll', handleScroll);
+    initializeSwipers();
+  }
+}
+
+window.addEventListener('scroll', handleScroll);
