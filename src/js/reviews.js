@@ -1,9 +1,7 @@
-document.addEventListener('DOMContentLoaded', async () => {
-  const { createReviewsSwiper } = await import('./swiper-config');
+import { createReviewsSwiper } from './swiper-config';
 
-  const reviewsSwiperElement = document.querySelector('.js-reviews-swiper');
+const reviewsSwiperElement = document.querySelector('.js-reviews-swiper');
 
-  if (reviewsSwiperElement) {
-    createReviewsSwiper(reviewsSwiperElement);
-  }
-});
+if (reviewsSwiperElement) {
+  createReviewsSwiper(reviewsSwiperElement);
+}
