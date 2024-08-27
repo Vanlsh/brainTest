@@ -12,3 +12,13 @@ function initializeGLightbox() {
     });
 }
 window.addEventListener('DOMContentLoaded', initializeGLightbox);
+document.addEventListener('DOMContentLoaded', async () => {
+  const { createGallerySwiper } = await import('./swiper-config');
+
+  const gallerySwiperElement = document.querySelector('.js-gallery-swiper');
+
+  if (gallerySwiperElement) {
+    const gallerySwiper = createGallerySwiper(gallerySwiperElement);
+    gallerySwiper.pagination.init();
+  }
+});
