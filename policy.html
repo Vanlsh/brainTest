@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/brainTest/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/brainTest/favicon.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,13 +22,24 @@
     <header class="header js-header">
   <div class="header-container container">
     <a href="/brainTest" class="header-logo">
-      <img
-        class="header-icon"
-        src="/brainTest/assets/logo-25865fa9.svg"
-        alt="Logo"
-        width="48"
-        height="48"
-      />
+      <picture>
+        <source
+          srcset="/brainTest/assets/logo-mob@1x-f25d1c30.png 1x, /brainTest/assets/logo-mob@2x-cc1ab993.png 2x"
+          media="(max-width: 1439.99px)"
+        />
+        <source
+          srcset="/brainTest/assets/logo-desk@1x-12616a30.png 1x, /brainTest/assets/logo-desk@2x-9c288948.png 2x"
+          media="(min-width: 1440px)"
+        />
+        <img
+          class="header-icon"
+          src="/brainTest/assets/logo-desk@1x-12616a30.png"
+          alt="Logo"
+          width="48"
+          height="48"
+        />
+      </picture>
+
       <span>Brain Test Premium</span>
     </a>
     <nav class="header-nav">
