@@ -1,6 +1,5 @@
 .hero {
   position: relative;
-  height: 843px;
   background-color: $_main_bg_color;
 
   .hero-container-paralax {
@@ -9,12 +8,6 @@
       padding-bottom: 78px;
     }
   }
-}
-.hero-phone {
-  position: absolute;
-  bottom: 108px;
-  right: 174px;
-  z-index: 10;
 }
 
 .hero-title {
@@ -56,9 +49,7 @@
     position: absolute;
     top: 0;
     left: 0;
-
     display: block;
-
     transition: opacity 0.3s ease;
   }
   .dark {
@@ -84,66 +75,131 @@
   }
 }
 
-.hero-element {
-  position: absolute;
-  top: 415px;
-  left: 1100px;
-  opacity: 0;
-  transition: opacity 1s ease, top 2s ease, left 2s ease;
+@media screen and (max-width: 1439.91px) {
+  .hero-a,
+  .hero-cat,
+  .hero-arrow-white,
+  .arrow-black,
+  .arrow-red,
+  .hero-robot,
+  .hero-atom,
+  .hero-h2o,
+  .hero-xo,
+  .hero-korona,
+  .hero-gear-white,
+  .hero-gear-red {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 96px;
+    padding-bottom: 53px;
+  }
 }
 
-.hero-animate {
-  opacity: 1;
-}
-.hero-robot.hero-animate {
-  top: 456px;
-  left: 1255px;
-}
-.hero-atom.hero-animate {
-  top: 374px;
-  left: 830px;
-}
-.hero-a.hero-animate {
-  top: 100px;
-  left: 875px;
-}
-.hero-cat.hero-animate {
-  top: 271px;
-  left: 660px;
-}
-.arrow-black.hero-animate {
-  top: 635px;
-  left: 468px;
-}
-.arrow-red.hero-animate {
-  top: 622px;
-  left: 808px;
-}
-.hero-arrow-white.hero-animate {
-  top: 180px;
-  left: 1286px;
-}
-.hero-gear-red.hero-animate {
-  top: 333px;
-  left: 1380px;
-}
-.hero-h2o.hero-animate {
-  top: 671px;
-  left: 1257px;
-}
-.hero-korona.hero-animate {
-  top: 72px;
-  left: 1220px;
-}
-.hero-xo.hero-animate {
-  top: 217px;
-  left: 756px;
-}
-.hero-gear-white.hero-animate {
-  top: 485px;
-  left: 693px;
-}
+@include media(desktop) {
+  .hero {
+    padding-top: 45px;
+  }
+  .hero-element {
+    position: absolute;
+    top: 415px;
+    left: 1100px;
+    opacity: 0;
+    transition: opacity 1s ease, top 2s ease, left 2s ease;
+  }
+  .hero-phone {
+    position: absolute;
+    bottom: 108px;
+    right: 174px;
+    z-index: 10;
+  }
 
+  .hero-animate {
+    opacity: 1;
+  }
+
+  .hero-robot.hero-animate {
+    top: 456px;
+    left: 1255px;
+  }
+  .hero-atom.hero-animate {
+    top: 374px;
+    left: 830px;
+  }
+  .hero-a.hero-animate {
+    top: 100px;
+    left: 875px;
+  }
+  .hero-cat.hero-animate {
+    top: 271px;
+    left: 660px;
+  }
+  .arrow-black.hero-animate {
+    top: 635px;
+    left: 468px;
+  }
+  .arrow-red.hero-animate {
+    top: 622px;
+    left: 808px;
+  }
+  .hero-arrow-white.hero-animate {
+    top: 180px;
+    left: 1286px;
+  }
+  .hero-gear-red.hero-animate {
+    top: 333px;
+    left: 1380px;
+  }
+  .hero-h2o.hero-animate {
+    top: 671px;
+    left: 1257px;
+  }
+  .hero-korona.hero-animate {
+    top: 72px;
+    left: 1220px;
+  }
+  .hero-xo.hero-animate {
+    top: 217px;
+    left: 756px;
+  }
+  .hero-gear-white.hero-animate {
+    top: 485px;
+    left: 693px;
+  }
+
+  .hero-cat {
+    transform-origin: top center; /* Fixed at the top center */
+    animation: swing 2s ease-in-out infinite;
+  }
+
+  @keyframes swing {
+    0% {
+      transform: rotate(-3deg);
+    }
+    50% {
+      transform: rotate(3deg);
+    }
+    100% {
+      transform: rotate(-3deg);
+    }
+  }
+  .arrow-black {
+    animation: back-forward 1s ease-in-out infinite;
+  }
+
+  @keyframes back-forward {
+    0% {
+      transform: translateX(50px);
+    }
+    50% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(50px);
+    }
+  }
+}
 .text-pop-up-top {
   -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
@@ -184,37 +240,5 @@
     text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc,
       0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc,
       0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
-  }
-}
-
-.hero-cat {
-  transform-origin: top center; /* Fixed at the top center */
-  animation: swing 2s ease-in-out infinite;
-}
-
-@keyframes swing {
-  0% {
-    transform: rotate(-3deg);
-  }
-  50% {
-    transform: rotate(3deg);
-  }
-  100% {
-    transform: rotate(-3deg);
-  }
-}
-.arrow-black {
-  animation: back-forward 1s ease-in-out infinite;
-}
-
-@keyframes back-forward {
-  0% {
-    transform: translateX(50px);
-  }
-  50% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(50px);
   }
 }
