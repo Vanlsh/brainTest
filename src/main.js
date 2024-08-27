@@ -6,4 +6,3 @@ import './js/benefits.js';
 import './js/header.js';
 import './js/navigation.js';
 import './js/aos.js';
-import './js/swiper-config.js';
