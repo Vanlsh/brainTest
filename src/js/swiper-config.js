@@ -1,4 +1,3 @@
-// src/swiper-config.js
 import Swiper from 'swiper';
 import {
   Autoplay,
