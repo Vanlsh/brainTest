@@ -1,21 +1,10 @@
 .reviews {
-  padding: 24px 0;
   background-color: #fcb91f;
 }
-.reviews-title-wrapper {
-  position: relative;
+.reviews-title {
   width: 209px;
   height: 54px;
-  margin: 0 auto;
-  margin-bottom: 24px;
-}
-.reviews-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-weight: 400;
-  font-size: 28px;
+  background-image: url('../img/reviews/reviews-title.webp');
 }
 .reviews-title-icon {
   width: 209px;
@@ -78,20 +67,10 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .reviews {
-    padding: 48px 0;
-  }
   .reviews-title {
+    width: 344px;
+    height: 84px;
     font-size: 48px;
-  }
-  .reviews-title-wrapper {
-    width: 344px;
-    height: 84px;
-    margin-bottom: 48px;
-  }
-  .reviews-title-icon {
-    width: 344px;
-    height: 84px;
   }
   .reviews-swiper {
     width: 1296px;
