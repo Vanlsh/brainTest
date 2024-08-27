@@ -1,13 +1,30 @@
 <header class="header js-header">
   <div class="header-container container">
     <a href="/brainTest" class="header-logo">
-      <img
-        class="header-icon"
-        src="./img/logo.svg"
-        alt="Logo"
-        width="48"
-        height="48"
-      />
+      <picture>
+        <source
+          srcset="
+            ./img/header/logo-mob@1x.png 1x,
+            ./img/header/logo-mob@2x.png 2x
+          "
+          media="(max-width: 1439.99px)"
+        />
+        <source
+          srcset="
+            ./img/header/logo-desk@1x.png 1x,
+            ./img/header/logo-desk@2x.png 2x
+          "
+          media="(min-width: 1440px)"
+        />
+        <img
+          class="header-icon"
+          src="./img/header/logo-desk@1x.png"
+          alt="Logo"
+          width="48"
+          height="48"
+        />
+      </picture>
+
       <span>Brain Test Premium</span>
     </a>
     <nav class="header-nav">
